@@ -39,9 +39,10 @@ provides a shared vocabulary and battle-tested approaches for your work.
   # Giscus comments — fill these in after running https://giscus.app with your repo
   [params.giscus]
     repo = "stmcallister/devrelpatterns.com"
-    repoId = "REPLACE_WITH_REPO_ID"
+    data-category="Comments"
+    repoId = "R_kgDORrzXaw"
     category = "Announcements"
-    categoryId = "REPLACE_WITH_CATEGORY_ID"
+    categoryId = "DIC_kwDORrzXa84C41gv"
 
   [[params.socialIcons]]
     name = "github"
