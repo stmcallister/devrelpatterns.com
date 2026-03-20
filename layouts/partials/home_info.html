@@ -1,0 +1,74 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+    <div class="home-info-inner">
+        <div class="home-info-text">
+            <header class="entry-header">
+                <h1>{{ .Title | markdownify }}</h1>
+            </header>
+            <div class="entry-content">
+                {{ .Content | markdownify }}
+            </div>
+            <div class="home-buy-btn">
+                <a href="https://link.springer.com/book/10.1007/979-8-8688-1895-0" target="_blank" rel="noopener noreferrer">
+                    Buy the Book &rarr;
+                </a>
+            </div>
+            <footer class="entry-footer">
+                {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+            </footer>
+        </div>
+        <div class="home-info-cover">
+            <a href="https://link.springer.com/book/10.1007/979-8-8688-1895-0" target="_blank" rel="noopener noreferrer">
+                <img src="/images/book-cover.png" alt="Developer Relations Activity Patterns book cover" />
+            </a>
+        </div>
+    </div>
+</article>
+
+<style>
+.home-info-inner {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+.home-info-text {
+    flex: 1;
+}
+.home-info-cover {
+    flex-shrink: 0;
+}
+.home-info-cover img {
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    display: block;
+}
+.home-buy-btn {
+    margin: 1.25rem 0;
+}
+.home-buy-btn a {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: var(--theme);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.home-buy-btn a:hover {
+    opacity: 0.85;
+}
+@media (max-width: 600px) {
+    .home-info-inner {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .home-info-cover img {
+        width: 160px;
+    }
+    .home-info-text {
+        width: 100%;
+    }
+}
+</style>
+{{- end -}}

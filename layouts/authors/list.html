@@ -1,0 +1,98 @@
+{{ define "main" }}
+<div class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="post-description">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="authors-grid">
+    {{ range .Pages.ByWeight }}
+    <div class="author-card">
+      <div class="author-photo">
+        {{ if .Params.photo }}
+        <img src="{{ .Params.photo }}" alt="{{ .Title }}" loading="lazy" />
+        {{ else }}
+        <div class="author-photo-placeholder">{{ substr .Title 0 1 }}</div>
+        {{ end }}
+      </div>
+      <div class="author-info">
+        <h2>{{ .Title }}</h2>
+        <p>{{ .Params.bio }}</p>
+        {{ with .Params.links }}
+        <div class="author-links">
+          {{ range . }}
+          <a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<style>
+.authors-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.author-card {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.author-photo {
+  flex-shrink: 0;
+}
+.author-photo img,
+.author-photo-placeholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.author-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tertiary);
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+.author-info h2 {
+  margin: 0 0 0.5rem;
+}
+.author-info p {
+  margin: 0 0 1rem;
+  opacity: 0.85;
+}
+.author-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.author-links a {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  text-decoration: none;
+}
+.author-links a:hover {
+  background: var(--tertiary);
+}
+@media (max-width: 600px) {
+  .author-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .author-links {
+    justify-content: center;
+  }
+}
+</style>
+{{ end }}
