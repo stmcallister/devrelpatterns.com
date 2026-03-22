@@ -49,7 +49,7 @@ After pushing the bits to the Web, my thought was, "Whoof. Job done. Glad *that'
 
 Things stagnated for a bit on that front, but a conversation with Woody led me to think that maybe there was a book to be had here. I knew I didn't want to do the book alone--[I've published a few in the past](https://www.newardassociates.com/books/), and I did not want to solo this one, because it was still going to be a ton of work to do, despite what I had already done. [Patterns](https://plopcon.org/) need to be [workshopped](https://www.industriallogic.com/design-patterns-workshop/) if you're going to get any decent kind of result, and you can't workshop them by yourself. You need a critical mass of people to do it effectively, and sitting by myself in my office, I didn't have that.
 
-Ever had one of those moments when somebody says something, and it just makes you go "Hm. Hmmmm. *Hmmmmmmm.* **HMMMMMMMMMM>**"?
+Ever had one of those moments when somebody says something, and it just makes you go "Hm. Hmmmm. *Hmmmmmmm.* **HMMMMMMMMMM**"?
 
 Woody said, "Well, I'll do it with you, if you'll have me."
 
