@@ -64,11 +64,15 @@ I knew already that I wanted APress to be the publisher, since they'd already "b
 On 17 July 2023, I wrote this email to Woody and Scott:
 
 ```
-Scott, Woody; Woody, Scott. (I can't remember if you guys have met formally before or not.)
+Scott, Woody; Woody, Scott. (I can't remember if you guys have met formally 
+before or not.)
 
-We should set up a time for us to connect and talk book stuff, and maybe think about making it a weekly touchpoint or something.
+We should set up a time for us to connect and talk book stuff, and maybe 
+think about making it a weekly touchpoint or something.
 
-Scott, just sent you an invite to the repo. Woody, do you have David Neal's email or his GitHub handle? I'll add him as well as soon as I know it. (We should see if David can join some of the touchpoints as well.)
+Scott, just sent you an invite to the repo. Woody, do you have David Neal's 
+email or his GitHub handle? I'll add him as well as soon as I know it. (We 
+should see if David can join some of the touchpoints as well.)
 ```
 
 ... and the project was officially off and running.
