@@ -13,7 +13,7 @@ enableEmoji = true
   home = ["HTML", "RSS", "JSON"]
 
 [params]
-  mainSections = ["blog"]
+  mainSections = ["blog", "videos"]
   author = "The DevRel Patterns Authors"
   description = "A companion site for the book Developer Relations Activity Patterns — practical patterns for building and scaling developer relations programs."
   keywords = ["developer relations", "devrel", "activity patterns", "developer advocacy"]
@@ -47,6 +47,10 @@ provides a shared vocabulary and battle-tested approaches for your work.
   [[params.socialIcons]]
     name = "github"
     url = "https://github.com/stmcallister/devrelpatterns.com"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
 
 [menu]
   [[menu.main]]
