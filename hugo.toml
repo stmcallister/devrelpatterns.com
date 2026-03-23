@@ -1,8 +1,4 @@
 baseURL = "https://devrelpatterns.com"
-
-[services]
-  [services.googleAnalytics]
-    ID = "G-NJNQTHW2K1"
 languageCode = "en-us"
 title = "Developer Relations Activity Patterns"
 theme = "PaperMod"
@@ -55,6 +51,10 @@ provides a shared vocabulary and battle-tested approaches for your work.
   [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-NJNQTHW2K1"
 
 [menu]
   [[menu.main]]
