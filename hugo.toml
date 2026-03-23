@@ -1,4 +1,8 @@
 baseURL = "https://devrelpatterns.com"
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-NJNQTHW2K1"
 languageCode = "en-us"
 title = "Developer Relations Activity Patterns"
 theme = "PaperMod"
